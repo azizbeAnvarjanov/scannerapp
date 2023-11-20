@@ -1,0 +1,166 @@
+.ListsDiller h2
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+.dillers
+{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.diller_box
+{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg);
+    color: var(--fff);
+    box-shadow: 0 10px 70px 10px var(--shadow);
+}
+
+.diller_info
+{
+    display: flex;
+}
+
+.diller_avatar
+{
+    width: 100px;
+    height: 100px;
+    background: var(--fff);
+    margin-right: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.diller_avatar svg
+{
+    font-size: 4em;
+    color: var(--bg);
+}
+
+.diller_right_box
+{
+    display: flex;
+}
+
+.diller_counter
+{
+    background: var(--fff);
+    color: var(--bg);
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+}
+
+
+.diller_qr_img{
+    width: 100px;
+    max-height: 100%;
+    background: var(--fff);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.diller_qr_img img
+{
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+  
+@media (max-width: 1200px) {
+    .dillers
+    {
+      width: 90%;
+    }
+}
+
+  
+@media (max-width: 890px) {
+    .dillers
+    {
+      width: 100%;
+    }
+
+    .diller_info h2
+    {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 890px) {
+    .diller_box
+    {
+        flex-direction: column;
+    }
+    .diller_info,
+    .diller_right_box
+    {
+        width: 100%;
+    }
+
+    .diller_right_box
+    {
+        justify-content: space-between;
+    }
+
+    .diller_counter,
+    .diller_qr_img
+    {
+        margin: 10px 10px 0 0;
+    }
+}
+
+
+@media (max-width: 890px) {
+   .diller_info
+   {
+    flex-direction: column;
+   }
+   .ListsDiller h2 
+   {
+    text-align: left;
+    margin-top: 20px;
+   }
+}
+
+@media (max-width: 400px) {
+   .ListsDiller h2 
+   {
+        font-size: 1.2em;
+   }
+}

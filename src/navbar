@@ -1,0 +1,31 @@
+ <ul>
+
+                    <li>
+                        <Link className='link active' to="/"> 
+                            <LuFileScan className='svg' onClick={(e) => isactive(e)} />     
+                            <p id='p'>Scannerlash</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link className='link' to="/qrcode"> 
+                            <HiOutlineQrcode className='svg' onClick={(e) => isactive(e)} /> 
+                            <p id='p'>QR Code yaratish</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link className='link' to="/adddiller"> 
+                            <BsPlusCircleFill className='svg' onClick={(e) => isactive(e)} /> 
+                            <p id='p'>Diller qo'shish</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link className='link' to="/lists"> 
+                            <GoChecklist className='svg' onClick={(e) => isactive(e)} /> 
+                            <p id='p'>Ro'yhat</p>
+                        </Link>
+                    </li>
+
+                </ul>

@@ -1,0 +1,246 @@
+
+
+/* 
+.navbar
+{
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 111;
+    border-radius: 50px;
+    box-shadow: 0 10px 70px 10px var(--navbar_shadow);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+nav
+{
+    display: flex;
+    width: auto;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background: var(--bg);
+    backdrop-filter: blur(30px) saturate(100%);
+    padding: 10px !important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+nav ul
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: var(--fff);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: max-content;
+    padding: 10px 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
+nav ul li a:hover
+{
+    background: var(--fff);
+    color: var(--bg);
+}
+
+
+
+
+
+
+
+
+
+nav ul li a p
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+
+nav ul li a.active p
+{
+    visibility: visible;
+    position: relative;
+}
+
+
+
+
+
+
+nav ul li a.active
+{
+    color: var(--bg);
+    background: var(--fff);
+}
+
+
+nav ul li
+{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
+nav ul li a svg
+{
+    font-size: 2em !important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    z-index: 111;
+}
+
+nav ul li a.active svg
+{
+    margin-right: 10px;
+} */
+
+
+nav
+{
+    position: fixed;
+    z-index: 111;
+    background: var(--bg);
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    height: 10vh;
+    color: var(--fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    box-shadow: 0 10px 70px 10px var(--navbar_shadow);
+}
+
+
+nav .tab
+{
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    /*border: 2px solid #eee;
+    */padding: 10px 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: max-content;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+nav .tab p
+{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.tab a
+{
+    display: flex;
+    align-content: center;
+    font-size: 2em;
+    color: var(--fff);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
+.tab:hover
+{
+    background: var(--fff);
+}
+
+.tab:hover a
+{
+    color: var(--bg);
+}
+
+
+.tab.active a
+{
+    margin-right: 10px;   
+    color: var(--bg);
+}
+
+.tab.active
+{
+    background: var(--fff);
+    padding: 10px 15px 10px 10px;
+}
+
+.tab.active p
+{
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    color: var(--bg);
+    font-weight: 700;
+}
